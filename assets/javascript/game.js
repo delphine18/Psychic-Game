@@ -35,10 +35,12 @@
         
       }
         var html =
-        "<p>The computer chose: " + computerPick + "</p>"+
+          "<h3>The Psychic Game</h3>" +
+          "<p>Guess what letter I'm thinking of<p>" +
+          "<p>The computer chose: " + computerPick + "</p>"+
           "<p>You chose: " + userPick + "</p>" +
-          "<p>wins: " + wins + "</p>" +
-          "<p>losses: " + losses + "</p>" +
+          "<p>Wins: " + wins + "</p>" +
+          "<p>Losses: " + losses + "</p>" +
           "<p>Guesses left: " + guessesleft + "</p>" +
           "<p>Your guesses so far: " + guessed + "</p>";
           
