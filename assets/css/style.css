@@ -1,6 +1,7 @@
 body{
   margin: 30px 30px;
-  padding-bottom: 415px;
+  padding-bottom: 410px;
+  position: fixed;
 }
 
 html{

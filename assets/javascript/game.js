@@ -11,9 +11,8 @@
     document.onkeyup = function(event) {
 
     var userPick = event.key;
-    guessed.push(userPick);
-
     var computerPick = letters[Math.floor(Math.random() * letters.length)];
+    guessed.push(userPick);
 
     var reset = function(){
     guessesleft = 9;
@@ -25,27 +24,28 @@
           wins++;
           reset();        
       } 
-      else {
+      else{
         guessesleft--; 
-      }
 
+      }
       if(guessesleft ===0){
         losses++;
         reset(); 
-        
       }
-        var html =
-          "<h2>The Psychic Game</h2>" +
-          "<p>Guess what letter I'm thinking of<p>" +
-          "<p>The computer chose: " + computerPick + "</p>"+
-          "<p>You chose: " + userPick + "</p>" +
-          "<p>Wins: " + wins + "</p>" +
-          "<p>Losses: " + losses + "</p>" +
-          "<p>Guesses left: " + guessesleft + "</p>" +
-          "<p>Your guesses so far: " + guessed + "</p>";
-          
-        document.querySelector("#game").innerHTML = html;
-      };
+     
+
+    var html =
+      "<h2>The Psychic Game</h2>" +
+      "<p>Guess what letter I'm thinking of<p>" +
+      "<p>The computer chose: " + computerPick + "</p>"+
+      "<p>You chose: " + userPick + "</p>" +
+      "<p>Wins: " + wins + "</p>" +
+      "<p>Losses: " + losses + "</p>" +
+      "<p>Guesses left: " + guessesleft + "</p>" +
+      "<p>Your guesses so far: " + guessed + "</p>";
+      
+    document.querySelector("#game").innerHTML = html;
+  };
       
    
    
