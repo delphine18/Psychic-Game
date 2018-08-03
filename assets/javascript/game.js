@@ -35,7 +35,7 @@
         
       }
         var html =
-          "<h3>The Psychic Game</h3>" +
+          "<h2>The Psychic Game</h2>" +
           "<p>Guess what letter I'm thinking of<p>" +
           "<p>The computer chose: " + computerPick + "</p>"+
           "<p>You chose: " + userPick + "</p>" +

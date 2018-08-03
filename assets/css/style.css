@@ -1,0 +1,12 @@
+body{
+  margin: 30px 30px;
+  padding-bottom: 415px;
+}
+
+html{
+  border: 2px solid black; 
+}
+
+#game{
+  font-size: large;
+}
